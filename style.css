@@ -362,5 +362,6 @@ footer a
 footer img
 {
   background-color: azure;
-  width: 50px;
+  width: 60px;
+  padding: 10px;
 }
