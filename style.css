@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-  /* background-color: black; */
+  background-color: black;
   position: fixed;
   top: 0;
   width: 100%;
@@ -22,7 +22,7 @@ body {
   justify-content:space-around;
   align-items: center;
   flex-direction: row-reverse;
-
+  height: 15%;
 }
 .logo{
     padding:14px 16px ;
@@ -36,8 +36,6 @@ body {
   font-size: 64pt;
   justify-content: center;
   font-family: 'Inter';
-
-
 }
 .logo a:hover
 {
@@ -47,24 +45,24 @@ body {
 .links
 {
     display: flex;
-
 }
 .links a {
 display: flex;
 color: #f2f2f2;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-  font-size: 24pt;
-  justify-content: center;
-  font-family: 'Inter';
+text-align: center;
+padding: 10px 12px;
+text-decoration: none;
+font-size: 24pt;
+justify-content: center;
+font-family: 'Inter';
 
 }
 .links a:hover {
-  background: #ddd;
-  color: black;
+  color: #66B95C;
   cursor: pointer;
 }
+
+
 
 .main {
   padding: 16px;
@@ -72,9 +70,7 @@ color: #f2f2f2;
   height: 1500px; /* Used in this example to enable scrolling */
 }
 .home {
-  /* background-color: #333; */
-  /* position: fixed; */
-  /* margin-top: 10%; */
+
   width: 100%;
   height: 100vh;
   display: flex;
@@ -129,10 +125,10 @@ color: #f2f2f2;
 }
 .news
 {
-  width: 100%;
-  height: 80vh;
+  padding: 180px;
+  height: 100vh;
   text-align: center;
-
+  width: 100vw;
 }
 
 .news h1, span{
@@ -141,7 +137,7 @@ color: #f2f2f2;
   font-family: 'Inter';
   color:white;
 }
-.new h1::after{
+.news h1::after{
   content: '';
   width: 4px;
   height: 30px;
@@ -162,7 +158,7 @@ color: #f2f2f2;
 }
 .newpost{
   background-color: #706B6B;
-  width: 25%;
+  width: 50%;
   margin: 20px;
   /* justify-content: center; */
 }
@@ -172,8 +168,199 @@ color: #f2f2f2;
 }
 .newpost figcaption
 {
-  font-size: 24pt;
+  font-size: 20pt;
   font-family: 'Inter';
   color:white;
   font-weight: bold;
+}
+
+.portifolio
+{
+
+  padding: 180px;
+  height: 100vh;
+  text-align: center;
+}
+.portifolio h1, span{
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: 'Inter';
+  color:white;
+}
+.portifolio h1::after{
+  content: '';
+  width: 4px;
+  height: 30px;
+  border-radius: 10px;
+  color: #66B95C;
+  position: absolute;
+}
+.portifolio h1 span{
+  color: #66B95C;
+}
+
+.portcontainer
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 200px 200px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.portinfo
+{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+
+.about
+{
+  padding: 180px;
+  height: 100vh;
+  text-align: center;
+}
+.about h1, span{
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: 'Inter';
+  color:white;
+}
+.about h1::after{
+  content: '';
+  width: 4px;
+  height: 30px;
+  border-radius: 10px;
+  color: #66B95C;
+  position: absolute;
+}
+.about h1 span{
+  color: #66B95C;
+}
+
+.aboutcontainer{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.aboutprofimg
+{
+  padding:14px 16px ;
+
+}
+.aboutprofimg img{
+  border-radius: 70px;
+  width: 350px;
+  height: 450px;
+}
+.rightabouttext
+{
+  color: white;
+  width: 50%;
+  /* margin-top: -13%; */
+}
+.rightabouttext p{
+  font-size: 25pt;
+  font-family: 'Lohit Devanagari';
+  font-weight: medium;
+  text-align: left;
+
+}
+.rightabouttext h1, h1 span{
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: 'Inter';
+
+}
+.rightabouttext h1 span{
+  color: #66B95C;
+}
+
+.contact
+{
+  padding: 180px;
+  height: 100vh;
+  text-align: center;
+}
+.contact h1, span{
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: 'Inter';
+  color:white;
+}
+.contact h1::after{
+  content: '';
+  width: 4px;
+  height: 30px;
+  border-radius: 10px;
+  color: #66B95C;
+  position: absolute;
+}
+.contact h1 span{
+  color: #66B95C;
+}
+
+.info 
+{
+color:#ffffff;
+font-size: 20pt;
+
+}
+
+.info input[type=text],input[type=email],textarea {
+  width: 80%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 10%;
+  margin-top: 1%;
+
+}
+.info input[type="submit"], input[type="reset"] 
+{
+  width: 238.63px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin-left: 10%;
+  margin-top: 1%;
+  background-color: #66B95C;
+  cursor: pointer;
+  color: bisque;
+  font-weight: bolder;
+  font-size: 16pt;
+  border-radius: 50px;
+} 
+.info textarea {
+  width: 80%;
+  min-height: 200px;
+  resize: none;
+  overflow: auto;
+}  
+
+footer
+{
+  color:#ffffff;
+  padding: 50px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20pt;
+}
+footer a
+{
+  text-decoration: none;
+  color: #ffffff;
+}
+footer img
+{
+  background-color: azure;
+  width: 50px;
 }
