@@ -11,6 +11,7 @@ body {
     font-family:Inter;
     background-color: black;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -23,6 +24,10 @@ body {
   align-items: center;
   flex-direction: row-reverse;
   height: 15%;
+}
+.icons
+{
+  display: none;
 }
 .logo{
     padding:14px 16px ;
@@ -64,11 +69,7 @@ font-family: 'Inter';
 
 
 
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-}
+
 .home {
 
   width: 100%;
@@ -109,7 +110,7 @@ font-family: 'Inter';
   color: #66B95C;
 }
 
-.righttext input
+.righttext a
 {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -119,9 +120,10 @@ font-family: 'Inter';
   display: inline-block;
   font-size: 24px;
   border-radius: 50px;
-  width:256.65px;
-  height: 94.94px;
+  width:200px;
+  height: 30px;
   margin-top:15%;
+  cursor: pointer;
 }
 .news
 {
@@ -176,7 +178,6 @@ font-family: 'Inter';
 
 .portifolio
 {
-
   padding: 180px;
   height: 100vh;
   text-align: center;
@@ -203,9 +204,12 @@ font-family: 'Inter';
 {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 200px 200px;
-  background-color: #2196F3;
+  grid-template-rows: auto;
+  /* background-color: #2196F3; */
   padding: 10px;
+  grid-gap: 50px;
+  align-content: center;
+
 }
 .portinfo
 {
@@ -214,7 +218,20 @@ font-family: 'Inter';
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  align-items: center;
+}
+.portinfo a
+{
+  text-decoration: none;
+  color:#fff;
+  font-weight: bolder;
+  cursor: pointer;
+
+}
+.portinfo a:hover
+{
+  color:#66B95C;
+  cursor: pointer;
+
 }
 
 
@@ -230,14 +247,7 @@ font-family: 'Inter';
   font-family: 'Inter';
   color:white;
 }
-.about h1::after{
-  content: '';
-  width: 4px;
-  height: 30px;
-  border-radius: 10px;
-  color: #66B95C;
-  position: absolute;
-}
+
 .about h1 span{
   color: #66B95C;
 }
@@ -283,6 +293,22 @@ font-family: 'Inter';
   color: #66B95C;
 }
 
+.rightabouttext a
+{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  border-radius: 50px;
+  width:200px;
+  height: 30px;
+  margin-top:15%;
+  cursor: pointer;
+}
+
 .contact
 {
   padding: 180px;
@@ -294,14 +320,6 @@ font-family: 'Inter';
   font-weight: bold;
   font-family: 'Inter';
   color:white;
-}
-.contact h1::after{
-  content: '';
-  width: 4px;
-  height: 30px;
-  border-radius: 10px;
-  color: #66B95C;
-  position: absolute;
 }
 .contact h1 span{
   color: #66B95C;
@@ -346,22 +364,234 @@ font-size: 20pt;
   overflow: auto;
 }  
 
-footer
+@media screen and (max-width: 500px) 
 {
-  color:#ffffff;
-  padding: 50px;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 20pt;
+*{
+  margin:0;
+  padding: 0;
+
 }
-footer a
-{
-  text-decoration: none;
-  color: #ffffff;
-}
-footer img
-{
-  background-color: azure;
-  width: 60px;
-  padding: 10px;
+  body{
+    max-width: 100%;
+  }
+    .navbar{
+      height: 5%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .links 
+    {
+        display: inline-block;
+        background-color: #000;
+        height: 300px;
+        top:-300px;
+        position:absolute;
+      }
+      .links:hover
+      {
+        color:#4CAF50;
+      }
+      .changetop{
+        top: 0;
+      }
+      .logo{
+        font-size: 10px;
+        padding: 0;
+        top: 0;
+        z-index: 100;
+        position: sticky;
+      }
+      .logo p{
+        
+        font-size: 25px;
+      }
+      .home{
+      /* background-color: red; */
+      display: flex;
+      height: 100vh;
+      max-width: 100%;
+      margin-top: 12%;
+      }
+      .righttext{
+        width: 100%;
+        margin-left: 5%;
+      }
+      .righttext p{
+        font-size: 16pt;
+        max-width: 90%;
+        text-align: center;
+      }
+      .righttext h1, h1 span{
+        font-size: 20pt;
+        text-align: center;
+      }
+      .profimg img{
+        border-radius: 70px;
+        max-width: 280px;
+      }
+      .righttext input
+      {
+        font-size: 14px;
+        width:150px;
+        max-height: 50px;
+        margin-top:15%;
+        margin-left: 20%;
+      }
+      .news
+      {
+        max-width: 100%;
+        max-height: 100%;
+        /* background-color: red; */
+        display: block;
+      }
+      .news h1, h1-span{
+        font-size: 20pt;
+        width:100%;
+        position: absolute;
+        top:112%;
+        left:5%;
+        display: inline-block;
+      }
+      .post
+      {
+        flex-wrap: wrap;
+        margin-top: -90px;
+      }
+      .newpost{
+        background-color: #706B6B;
+        width: 500px;
+        margin: 5px;
+      }
+      .newpost img 
+      {
+        width: 300px;
+      }
+      .newpost figcaption
+      {
+        font-size: 14pt;
+      }
+      .portifolio
+      {
+      padding: 0;
+      margin-top: 40%;
+      margin-left: 5%;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      }
+      .portifolio h1,h1-span
+      {
+        margin-top: 5px;
+      }
+      .portcontainer
+      {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      }
+      .portinfo a
+      {
+        text-decoration: none;
+      }
+      .portinfo a:hover
+      {
+        color:#66B95C;
+        cursor: pointer;
+      }
+      .about
+      {
+        display: flex;
+        height: 100vh;
+        max-width: 100%;
+        margin-top: -50%;
+        flex-wrap: wrap;
+      }
+      .aboutcontainer{
+        margin-top: -30px;
+
+      }
+      .about h1
+      {
+        margin-top: -150px;
+        margin-left: -100px;
+        position: absolute;
+        font-size: 24pt;
+      }
+      .about span
+      {
+
+        font-size: 24pt;
+      }
+      .rightabouttext
+      {
+        margin-right: 100%;
+        float:left;
+      }
+      .rightabouttext p
+      {
+        font-size: 16pt;
+        max-width: 100%;
+        text-align: center;
+        /* background-color: #222222; */
+        position: absolute;
+        margin-left: -120px; 
+        margin-top: -110px;
+     
+      }
+      .rightabouttext input
+      {
+        position: relative;
+        margin-left: -80px;
+        margin-top: 20%;
+      }
+      .aboutprofimg img
+      {
+        border-radius: 70px;
+        max-width: 280px;
+        height: auto;
+        position: absolute;
+        margin-left: -220px;
+        margin-top: 5px;
+      }
+      .contact
+      {
+        display: flex;
+        height: 100vh;
+        max-width: 100%;
+        margin-top: 5%;
+        margin-left: 5%;
+        flex-wrap: wrap;
+      }
+      .contact h1
+      {
+          margin-top: -150px;
+          margin-left: -100px;
+          position: absolute;
+          font-size: 24pt;
+        }
+      .contact span
+      {
+        font-size: 24pt;
+      }
+      .contact .info input[type=submit]
+      {
+        width: 50%;
+
+      } 
+      .contact .info 
+      {
+        margin-left: -55%;
+        margin-top: -20%;
+        position:absolute;
+        width:100%;
+
+      } 
+      .icons
+      {
+        display: block;
+        color:#fff
+
+      }
 }
