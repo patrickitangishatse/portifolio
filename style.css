@@ -416,10 +416,11 @@ box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 .info
 {
-    width: 60%;
+    width: 100%;
     display: inline-block;
-    margin-left: 20%;
-    margin-top: 5%;
+    align-content: center;
+    
+
 }
 
 .info input[type=text],input[type=email],textarea {
@@ -431,6 +432,7 @@ box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     /* margin-left: 10%; */
     margin-top: 10px;
+    margin-left: 10%;
 }
 
 .info textarea {
@@ -438,16 +440,18 @@ box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     min-height: 120px;
     resize: none;
     overflow: auto;
+    margin-left: 10%;
+
 }
 
 .info input[type="submit"] 
 {
-    width: 150px;
+    width: 30%;
     padding: 12px 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top: 1%;
     background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     cursor: pointer;
@@ -610,6 +614,26 @@ font-size: 20px;
 }
 .contact
 {
-    height: fit-content;
+width: 100%;
 }
+.contanct-address
+{
+width: 100%;
+
+}
+.info input[type=text],input[type=email],textarea {
+    width: 95%;
+    margin:10px 2%;
+}
+
+.info textarea {
+    width: 95%;
+    margin:10px 2%;
+}
+
+.info input[type="submit"] 
+{
+    width: 95%;
+    margin:10px 2%;
+} 
 }
