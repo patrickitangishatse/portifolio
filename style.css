@@ -67,6 +67,7 @@ nav .icon {
   height: 90vh;
   padding: 0 5%;
   top: 100px;
+  flex-wrap: wrap;
 }
 
 .home-disc {
@@ -489,30 +490,34 @@ footer .footer-container i {
     left: 25px;
     cursor: pointer;
   }
+
   .home {
     flex-direction: column-reverse;
-    width: 100%;
-    /* height: auto; */
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 90vh;
   }
+
   .home-disc {
     width: 100%;
-    align-content: center;
   }
+
+  .home-disc p {
+    font-size: 13px;
+  }
+
   .home-disc h1 {
-    font-size: 25px;
-    padding: 5% 0;
+    font-size: 20px;
   }
-  .home-disc a {
-    width: 100%;
-    text-align: center;
-  }
+
   .home-img {
     width: 100%;
   }
+
   .home-img img {
     width: 100%;
   }
+
   .about {
     width: 100%;
     height: fit-content;
@@ -592,5 +597,17 @@ footer .footer-container i {
   .info input[type="submit"] {
     width: 95%;
     margin: 10px 2%;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding: 20px 5%;
+    gap: 1rem;
+  }
+
+  footer .footer-container p {
+    font-size: 10px;
   }
 }
