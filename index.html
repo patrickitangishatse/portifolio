@@ -15,21 +15,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html" target="_parent"><h1>Patrick</h1></a>
-        <img src="images/332-3326726_mobile-menu-font-awesome-bars-png.png" />
-      </div>
-      <div class="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="services.html">services</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </div>
+    <nav>
+      <h1><a href="index.html" target="_parent">Patrick</a></h1>
+
+      <ul id="sidemenu">
+        <li><a href="">Home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#contact">contact</a></li>
+        <i class="fa-solid fa-xmark icon" onclick="HideNavMenu()"></i>
+      </ul>
+
+      <i class="fa-solid fa-bars icon" onclick="ShowNavMenu()"></i>
     </nav>
     <main>
+      <!-- home -->
       <div class="home" id="home">
         <div class="home-disc">
           <span>this is me</span>
@@ -45,6 +45,196 @@
           <img src="images/Passportsss (1).png" />
         </div>
       </div>
+      <!-- end-home -->
+
+      <!-- about -->
+      <div class="about" id="about">
+        <div class="about-header">
+          <h1>About Me</h1>
+        </div>
+        <div class="about-img">
+          <div class="imag">
+            <img src="images/PATRICK_2-removebg-preview.png" />
+          </div>
+          <div class="about-content">
+            <span>ABOUT ME</span>
+            <h1>PERSONAL DETAILS</h1>
+            <p>
+              I am a developer, I strives to build immersive and beautiful web
+              applications through carefully crafted code and user-centric
+              design, I have acquired the skills and knowledge.
+            </p>
+            <a download href="cv_withphoto.pdf" target="_blank">Download CV</a>
+          </div>
+        </div>
+        <div class="tools">
+          <h1 class="tool">Quality Services</h1>
+          <div class="services-content">
+            <div class="services-box">
+              <h1>Website Development</h1>
+            </div>
+            <div class="services-box">
+              <h1>Digital Experience</h1>
+            </div>
+            <div class="services-box">
+              <h1>Content Marketing</h1>
+            </div>
+            <div class="services-box">
+              <h1>Social Media Design</h1>
+            </div>
+            <div class="services-box">
+              <h1>Shared Web Hosting</h1>
+            </div>
+            <div class="services-box">
+              <h1>Mobile Development</h1>
+            </div>
+          </div>
+
+          <h1 class="tool">Programming Skills</h1>
+          <div class="lang">
+            <div class="prog">
+              <p>Python <span>80%</span></p>
+              <div class="line1"></div>
+            </div>
+            <div class="prog">
+              <p>Django<span>75%</span></p>
+              <div class="line2"></div>
+            </div>
+            <div class="prog">
+              <p>Dart<span>80%</span></p>
+              <div class="line1"></div>
+            </div>
+            <div class="prog">
+              <p>Flutter<span>75%</span></p>
+              <div class="line2"></div>
+            </div>
+            <div class="prog">
+              <p>C# <span>75%</span></p>
+              <div class="line2"></div>
+            </div>
+            <div class="prog">
+              <p>C++ <span>80%</span></p>
+              <div class="line1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end-about -->
+
+      <!-- start-services -->
+      <div class="services" id="services">
+        <div class="services-header"><h1>SERVICES</h1></div>
+        <h1 class="services-h2">My Offered Services</h1>
+        <p class="sercices-paragra">
+          At about this time of year, some months after New Year’s resolutions
+          have been made and kept, or made and neglected.
+        </p>
+
+        <div class="service-card">
+          <div class="service-card-child">
+            <div class="service-icontitle">
+              <img src="images/pie.PNG" />
+              <h3>Web Design</h3>
+            </div>
+            <p>
+              “It is not because things are difficult that we do not dare; it is
+              because we do not dare that they are difficult.”
+            </p>
+          </div>
+
+          <div class="service-card-child">
+            <div class="service-icontitle">
+              <img src="images/laptop.png" />
+              <h3>Web Development</h3>
+            </div>
+            <p>
+              If you are an entrepreneur, you know that your success cannot
+              depend on the opinions of others. Like the wind, opinions.
+            </p>
+          </div>
+
+          <div class="service-card-child">
+            <div class="service-icontitle">
+              <img src="images/camera.png" />
+              <h3>Photography</h3>
+            </div>
+            <p>
+              Do you want to be even more successful? Learn to love learning and
+              growth. The more effort you put into improving your skills.
+            </p>
+          </div>
+
+          <div class="service-card-child">
+            <div class="service-icontitle">
+              <img src="images/clip.png" />
+              <h3>Clipping Path</h3>
+            </div>
+            <p>
+              Hypnosis quit smoking methods maintain caused quite a stir in the
+              medical world over the last two decades. There is a lot of
+              argument
+            </p>
+          </div>
+
+          <div class="service-card-child">
+            <div class="service-icontitle">
+              <img src="images/tablet.png" />
+              <h3>Apps Interface</h3>
+            </div>
+            <p>
+              Do you sometimes have the feeling that you’re running into the
+              same obstacles over and over again? Many of my conflicts.
+            </p>
+          </div>
+
+          <div class="service-card-child">
+            <div class="service-icontitle">
+              <img src="images/rocket-62.png" />
+              <h3>Apps Interface</h3>
+            </div>
+            <p>
+              You’ve heard the expression, “Just believe it and it will come.”
+              Well, technically, that is true, however, ‘believing’ is not just
+              thinking that.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end-services -->
+
+      <!-- start-contact -->
+      <!-- <div class="contact" id="contact">
+        <div class="services-header"><h1>CONTACT US</h1></div>
+        <div class="contact-container">
+          <div class="info">
+            <form action="#" method="post">
+              <input
+                type="text"
+                name="Firstname"
+                placeholder="Enter Your Full Names"
+                required="required"
+              />
+              <br />
+              <input type="text" name="phone" placeholder="078..." /><br />
+              <input
+                type="email"
+                name="email"
+                placeholder="example@domain name"
+                required="required"
+              />
+              <br />
+              <textarea
+                placeholder="Enter your Message"
+                rows="4"
+                col
+              ></textarea>
+              <br />
+              <input type="submit" name="submit" value="Send Message" />
+            </form>
+          </div>
+        </div>
+      </div> -->
+      <!-- end-contact -->
     </main>
     <footer>
       <p>&copy 2023 Patrick ITANGISHATSE</p>
@@ -65,5 +255,6 @@
         </ul>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
