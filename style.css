@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Euclid Circular A", Sans-serif;
+  scroll-behavior: smooth;
+
 }
 
 html {
@@ -242,7 +244,6 @@ nav .icon {
   line-height: 30px;
 }
 .services-box:hover {
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -300,78 +301,13 @@ nav .icon {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-.services {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 90vh;
-  /* padding: 0 5%; */
-  margin-top: 100px;
-  background: rgba(202, 199, 199, 0.184);
-}
-
-.services-header h1 {
-  text-align: center;
-  color: #000;
-  font-weight: 600;
-  font-size: 70px;
-}
-.services-h2 {
-  font-size: 36px;
-  color: #222222;
-  line-height: 1.2em !important;
-  margin-bottom: 0;
-  /* margin-top: 10px; */
-  font-weight: 600;
-}
-.sercices-paragra {
-  text-align: center;
-  font-size: 18pt;
-  width: 40%;
-  /* margin:10px 0 20px; */
-}
-.service-card {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 50px;
-  padding: 0 50px;
-}
-.service-card-child {
-  width: 90%;
-}
-.service-card-child h3 {
-  margin: 20px 0;
-  text-align: center;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  color: #04091e;
-  line-height: 1.2em !important;
-  font-weight: 600;
-}
-.service-card-child p {
-  margin: 20px 0;
-  text-align: center;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  color: #04091e;
-}
-
-.service-card-child:hover {
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-}
-.service-icontitle {
-  text-align: center;
-}
-.service-card-child img {
-  width: 50px;
-}
 .contact {
-  height: 90vh;
+  height: 80vh;
   background: rgba(202, 199, 199, 0.184);
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  padding: 0 5%;
 }
 .contact-container {
   display: flex;
